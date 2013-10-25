@@ -1,7 +1,7 @@
-add 
-show list
-delete task_id
-complete task_id
+m: add a task
+v: show the list
+delete via task_id
+complete via task_id
 
 
 
@@ -10,18 +10,11 @@ list table
 created
 updated
 
-
 task table
 completed?
 list_id
 created
 updated
-
-
-
-
-
-
 
 list.rb (model)
 task.rb (model)

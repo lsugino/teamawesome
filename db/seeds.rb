@@ -1,39 +1,19 @@
 # require_relative '../config/application'
-
-
 require 'faker'
+
+
 
 Task.delete_all
 
-p "yuck"
-p grrr = Task.create(:task => "grrrr")
-p "yucky"
 
-50.times do |task|
-  Task.create(:task => Faker::Lorem.sentence)
-end
-
-5.times do |list|
-  List.create(:name => Faker::Lorem.words.join)
-end
+  vanessas_list = List.create(:name => Faker::Lorem.words.join)
+  p vanessas_list.id
+  learning = vanessas_list.tasks.create( :task => "learn to fly" )
+  p learning.list_id
+  p learning.id
 
 
 
 
 
 
-
-
-
-
-
-
-
-
- # create_table :tasks do |t|
- #      t.reference :task, index: true
- #      t.string :task
- #      t.varbinary :completed?
-
- #      t.timestamps
- #    end
