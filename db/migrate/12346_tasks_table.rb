@@ -1,10 +1,12 @@
+require_relative '../../config/application'
 
 class TasksTable < ActiveRecord::Migration
+
   def change 
     create_table :tasks do |t|
-      t.reference :task, index: true
+      # t.integer :list, index: true
       t.string :task
-      t.varbinary :completed?
+      t.boolean :completed?, default: false
 
       t.timestamps
     end

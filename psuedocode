@@ -1,0 +1,32 @@
+add 
+show list
+delete task_id
+complete task_id
+
+
+
+
+list table
+created
+updated
+
+
+task table
+completed?
+list_id
+created
+updated
+
+
+
+
+
+
+
+list.rb (model)
+task.rb (model)
+
+driver code
+tests
+
+
